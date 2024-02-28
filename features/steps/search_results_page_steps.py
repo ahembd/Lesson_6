@@ -24,7 +24,6 @@ def click_and_verify_colors(context):
     expected_colors = ['Black', 'Brown', 'Cream']
     actual_colors = []
 
-
     colors = context.driver.find_elements(*COLOR_OPTIONS)  # [webelement1, webelement2, webelement3]
     for color in colors[:3]:
         color.click()

@@ -1,4 +1,4 @@
-from pages.base_page import Page
+from features.pages.base_page import Page
 
 class MainPage(Page):
 
