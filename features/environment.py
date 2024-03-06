@@ -4,12 +4,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.wait import WebDriverWait
 from app.application import Application
 
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.support.wait import WebDriverWait
-from app.application import Application
-
 
 def browser_init(context):
     driver_path = ChromeDriverManager().install()
@@ -19,7 +13,6 @@ def browser_init(context):
 
     context.driver.implicitly_wait(4)
     context.wait = WebDriverWait(context.driver, 15)
-    print('assigning context.app to Application(context.driver')
     context.app = Application(context.driver)
 
 

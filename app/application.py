@@ -1,7 +1,7 @@
-from features.pages.base_page import Page
-from features.pages.header import Header
-from features.pages.main_page import MainPage
-from features.pages.search_results_page import SearchResultsPage
+from pages.base_page import Page
+from pages.header import Header
+from pages.main_page import MainPage
+from pages.search_results_page import SearchResultsPage
 
 class Application:
 
