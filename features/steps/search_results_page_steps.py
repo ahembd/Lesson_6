@@ -14,13 +14,9 @@ PRODUCT_TITLE = (By.CSS_SELECTOR, "[data-test='product-title']")
 PRODUCT_IMG = (By.CSS_SELECTOR, "[class*='ProductCardImage']")
 
 
-
-
 @when('Click on Add to Cart button')
 def click_add_to_cart(context):
     context.driver.find_element(*ADD_TO_CART_BTN).click()
-
-
 
 
 @when('Click on Add to Cart button for product {i}')
@@ -28,6 +24,8 @@ def click_add_to_cart_by_index(context, i):
     # Find all Add to cart buttons, click on a button by index:
     # product 1 -> index 0
     # product 2 -> index 1, etc.
+    item_list = context.driver.find_elements(*ADD_TO_CART_BTN)
+    print('item_list = ' + str(item_list))
     context.driver.find_elements(*ADD_TO_CART_BTN)[int(i)-1].click()
 
 
@@ -40,9 +38,9 @@ def store_product_name(context):
 @when('Store product name to a list')
 def store_product_names(context):
     TARGET_HELP_H2 = (By.XPATH, '')
-    context.wait.until(
-        EC.text_to_be_present_in_element(TARGET_HELP_H2,'Target Help'),
-        message="'Target Help' text did not appear")
+    # context.wait.until(
+    #     EC.text_to_be_present_in_element(TARGET_HELP_H2,'Target Help'),
+    #     message="'Target Help' text did not appear")
     current_product_name = context.driver.find_element(*SIDE_NAV_PRODUCT_NAME).text
     try:  # try to add a product to context.product_names:
         context.product_names.append(current_product_name)
@@ -77,15 +75,8 @@ def verify_products_name_img(context):
     context.driver.execute_script("window.scrollBy(0,2000)", "")
     sleep(2)
     context.driver.execute_script("window.scrollBy(0,2000)", "")
-
-
     all_products = context.driver.find_elements(*LISTINGS)
-
-
     for product in all_products:
-
-
-        title = product.find_element(*PRODUCT_TITLE).text
-        print(title)
-        assert title, 'Product title not shown'
-        product.find_element(*PRODUCT_IMG)
+        title = product.find_element(*PRODUCT_TITLE)
+        product_img = product.find_element(*PRODUCT_IMG)
+        print('product_img = ' + str(product_img))

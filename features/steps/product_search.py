@@ -35,34 +35,8 @@ def verify_found_results_text(context, search_word):
         f'Expected query not in {context.driver.current_url.lower()}'
 
 
-@given("Open target product A-88063497 page")
-def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
-    raise NotImplementedError(u'STEP: Given Open target product A-88063497 page')
-
-
-@then("Verify user can click through colors")
-def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
-    raise NotImplementedError(u'STEP: Then Verify user can click  through colors')
-
-
-@then("Page URL has search term coffee")
-def step_impl(context):
-    """
-    :type context: behave.runner.Context
-    """
-    raise NotImplementedError(u'STEP: Then Page URL has search term coffee')
-
-
 @then("Page URL has search term coffee+mug")
-def step_impl(context):
-     """
-     :type context: behave.runner.Context
-     """
-     raise NotImplementedError(u'STEP: Then Page URL has search term coffee+mug')
+def verify_search_term_in_url(context, search_word):
+    assert search_word.lower() in context.driver.current_url.lower(), \
+        f'Expected search term not in {context.driver.current_url.lower()}'
 

@@ -2,19 +2,23 @@
 # Created by svetlanalevinsohn at 1/27/24
 Feature: Target.com search tests
 
-
-  Scenario: User can search for clothes boys 1 on target
+  Scenario Outline: User can search for boys clothes on target
     Given Open Target main page
-    When Search for clothes boys 1
-    Then Search results for clothes boys 1 are shown
-    Then Page URL has search term clothes boys 1
+    When Search for boys clothes
+    Then Search results for boys clothes are shown
+    Then Page URL has search term <expected_part_url>
+    Examples:
+      | product      | expected_result | expected_part_url |
+      | boys clothes | boys clothes    | boys+clothes      |
 
-
-  Scenario: User can search for coffee on target
+  Scenario Outline: User can search for coffee on target
     Given Open Target main page
     When Search for coffee
-    Then Search results for coffee are shown
-    Then Page URL has search coffee
+    Then Search results for <expected_result> are shown
+    Then Page URL has search term <expected_part_url>
+    Examples:
+      | product | expected_result | expected_part_url |
+      | coffee  | coffee          | coffee            |
 
 
 #  Scenario Outline: User can search for a product on target
