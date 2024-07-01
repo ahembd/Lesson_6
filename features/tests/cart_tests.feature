@@ -10,7 +10,7 @@ Feature: Cart tests
   Scenario: User can add a product to cart
     Given Open target main page
     When Search for coffee
-    And Click on Add to Cart button for product 2
+    And Click on Add to Cart button for product 1
     And Store product name to a list
     And Confirm Add to Cart button from side navigation
     And Open cart page
@@ -25,7 +25,7 @@ Feature: Cart tests
     And Store product name to a list
     And Confirm Add to Cart button from side navigation
     And Close side navigation
-    And Click on Add to Cart button for product 4
+    And Click on Add to Cart button for product 2
     And Store product name to a list
     And Confirm Add to Cart button from side navigation
     And Open cart page

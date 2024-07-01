@@ -8,8 +8,8 @@ class Header(Page):
     SEARCH_FIELD = (By.ID, 'search')
     SEARCH_ICON = (By.XPATH, "//button[@data-test='@web/Search/SearchButton']")
 
-    def search_product(self):
+    def search_product(self, search_input):
         print('in context.header.search_product')
-        self.input_text('coffee', *self.SEARCH_FIELD)
+        self.input_text(search_input, *self.SEARCH_FIELD)
         self.click(*self.SEARCH_ICON)
         sleep(6)

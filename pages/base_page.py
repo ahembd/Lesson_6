@@ -11,11 +11,11 @@ class Page:
         self.driver.get(url)
 
     def find_element(self, *locator):
-        print('in base_page.find_element, *locator == ' + str(*locator))
+        print('in base_page.find_element, *locator == ' + str(locator))
         return self.driver.find_element(*locator)
 
     def find_elements(self, *locator):
-        print('in base_page.find_elements')
+        print('in base_page.find_elements, *locator == ' + str(*locator))
         return self.driver.find_elements(*locator)
 
     def click(self, *locator):

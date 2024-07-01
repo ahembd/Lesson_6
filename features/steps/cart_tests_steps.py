@@ -54,10 +54,6 @@ def verify_cart_items(context, amount):
 def verify_cart_empty_message(context):
     print('in verify cart is empty')
     actual_text = context.driver.find_element(*CART_HEADER).text
+    print('actual_text == ' + actual_text)
     assert 'Your cart is empty' == actual_text, f"Expected 'Your cart is empty' but got {actual_text}"
 
-
-# @when("Close side navigation")
-# def step_impl(context):
-#     pass
-#     # raise NotImplementedError(u'STEP: And Close side navigation')

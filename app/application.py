@@ -3,6 +3,7 @@ from pages.header import Header
 from pages.main_page import MainPage
 from pages.search_results_page import SearchResultsPage
 
+
 class Application:
 
     def __init__(self, driver):

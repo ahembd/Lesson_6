@@ -22,7 +22,7 @@ def search_product(context, product):
     # context.driver.find_element(*SEARCH_FIELD).send_keys(product)
     # context.driver.find_element(*SEARCH_ICON).click()
     # sleep(6)
-    context.app.header.search_product()
+    context.app.header.search_product(product)
 
 
 @when('Click on Cart icon')
