@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbf7b765-dcc8-4b5f-897e-4e625e5e3177" name="Changes" comment="">
+    <list default="true" id="dbf7b765-dcc8-4b5f-897e-4e625e5e3177" name="Changes" comment="Latest edition.">
       <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/cart_tests_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/cart_tests_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/main_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/main_page_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/product_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/product_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/search_results_page_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/search_results_page_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/tests/cart_tests.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/cart_tests.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/tests/main_page_ui.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/main_page_ui.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/tests/target_search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/tests/target_search.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/header.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/search_results_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/search_results_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,8 +301,25 @@
       <workItem from="1719835545084" duration="78000" />
       <workItem from="1719835681114" duration="417000" />
       <workItem from="1719837934349" duration="470000" />
-      <workItem from="1719838414216" duration="11377000" />
+      <workItem from="1719838414216" duration="11772000" />
     </task>
+    <task id="LOCAL-00001" summary="Latest edition.">
+      <option name="closed" value="true" />
+      <created>1719865306873</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719865306873</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Latest edition.">
+      <option name="closed" value="true" />
+      <created>1719865419009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719865419009</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +362,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Latest edition." />
+    <option name="LAST_COMMIT_MESSAGE" value="Latest edition." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/target_search_feature$cart_tests_feature.coverage" NAME="cart_tests.feature Coverage Results" MODIFIED="1719858174268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
